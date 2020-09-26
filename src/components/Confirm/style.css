@@ -1,0 +1,60 @@
+.confirm-container {
+    width: 500px;
+    min-width: 180px;
+    padding: 20px 40px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.confirm-container>.confirm-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.confirm-container>.confirm-content {
+    padding: 20px 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.confirm-container>.confirm-divide {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background: #70707034;
+}
+
+.confirm-container>.button-container {
+    padding: 20px 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirm-container>.button-container>.btn {
+    width: 120px;
+    height: 35px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.confirm-container>.button-container>.btn-ok {
+    border: 0;
+    background: #3F89DB;
+    color: #FFF;
+}
+
+.confirm-container>.button-container>.btn-cancel {
+    background: #EC5E5E;
+    border: 2px solid #EC5E5E;
+    color: #FFFFFF;
+}
