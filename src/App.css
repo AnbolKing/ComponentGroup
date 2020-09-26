@@ -1,0 +1,5 @@
+.app-container {
+    background: fixed center url('./assets/png/confirm-bg.png') #F0F2F5 no-repeat;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,27 @@
+.test-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.test-container>button {
+    width: 105px;
+    height: 58px;
+    margin: 14px 30px;
+    border: 1px solid #EC5E5E;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #EC5E5E;
+}
+
+.test-container>button:focus {
+    outline: #EC5E5E;
+}
+
+.test-container>button:hover {
+    cursor: pointer;
+}
