@@ -1,7 +1,7 @@
 import React ,{ Component } from 'react';
 import './style.css';
-import Mask from '../Mask/index';
-import Button from '../Button/index';
+// import Mask from '../Mask/index';
+import Message from '../Message/index'
 
 class Test extends Component {
   constructor(props) {
@@ -37,27 +37,15 @@ class Test extends Component {
   render() {
     return (
       <div className="test-container">
-        <Mask show={this.state.show} content={
-            <div>
-              <Button
-                text={'测试'}
-                onOK={() => {console.log('button');}}
-                type={'color'}
-              ></Button>
-              <Button
-                text={'测试'}
-                onOK={() => {console.log('button');}}
-                type={'ok'}
-              ></Button>
-              <Button
-                text={'测试'}
-                onOK={() => {console.log('button');}}
-                type={'danger'}
-              ></Button>
-            </div>
-          }
-        >
-        </Mask>
+        <Message
+          show={this.state.show}
+          content={'这是一小段测试内容'}
+          title={'这是一个标题'}
+          time={1000}
+          position={{
+            // top:'30px'
+          }}
+        ></Message>
         <button onClick={this.handleShowMask}>点我测试</button>
       </div>
     )
