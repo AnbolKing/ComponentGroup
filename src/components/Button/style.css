@@ -1,0 +1,40 @@
+.button {
+    width: 165px;
+    height: 40px;
+    border: 2px solid #7e8491;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btn-color {
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #6588E7, #42C8D2);
+    box-shadow: -10px 10px 35px -15px rgb(52, 88, 185), 15px 10px 45px -15px rgb(30, 148, 157);
+}
+
+.btn-color:focus {
+    outline: linear-gradient(to right, #6588E7, #42C8D2);
+}
+
+.btn-ok {
+    color: #75abe7;
+    border-color: #75abe7;
+}
+
+.btn-ok:focus {
+    outline: #75abe7;
+}
+
+.btn-danger {
+    color: #ff8a8a;
+    border-color: #ff8a8a;
+}
+
+.btn-danger:focus {
+    outline: #ff8a8a;
+}
