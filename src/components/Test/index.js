@@ -37,15 +37,17 @@ class Test extends Component {
   render() {
     return (
       <div className="test-container">
-        <Message
-          show={this.state.show}
-          content={'这是一小段测试内容'}
-          title={'这是一个标题'}
-          time={1000}
-          position={{
-            // top:'30px'
-          }}
-        ></Message>
+        {
+          this.state.show? (
+            <Message
+              content={'这是一小段测试内容'}
+              title={'这是一个标题'}
+              time={1000}
+              delay={1000}
+            ></Message>
+          ):null
+        }
+        {/* <Mask show={this.state.show}></Mask> */}
         <button onClick={this.handleShowMask}>点我测试</button>
       </div>
     )

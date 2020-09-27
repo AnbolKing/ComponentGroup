@@ -2,12 +2,12 @@ import React from 'react';
 import './style.css';
 
 const Message = (props) => {
-  const {content, title, time, position, show } = props;
-  if(!show) {
-    //document.getElementsByClassName('message-container')[0].style.display = 'none'
-  }
+  const {content, title, position, delay } = props;
+  setTimeout(() => {
+    document.getElementsByClassName('message-container')[0].className = 'message-container fadeOutDown'
+  },delay)
   return (
-    <div className="message-container" style={position}>
+    <div className="message-container fadeInDown" style={position}>
       {
         title?(
           <div className="message-title">
