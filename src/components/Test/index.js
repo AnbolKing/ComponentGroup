@@ -1,7 +1,6 @@
 import React ,{ Component } from 'react';
 import './style.css';
-// import Mask from '../Mask/index';
-import Message from '../Message/index'
+import SpinVedio from '../Spin/vedio/index';
 
 class Test extends Component {
   constructor(props) {
@@ -37,18 +36,8 @@ class Test extends Component {
   render() {
     return (
       <div className="test-container">
-        {
-          this.state.show? (
-            <Message
-              content={'这是一小段测试内容'}
-              title={'这是一个标题'}
-              time={1000}
-              delay={1000}
-            ></Message>
-          ):null
-        }
-        {/* <Mask show={this.state.show}></Mask> */}
         <button onClick={this.handleShowMask}>点我测试</button>
+        <SpinVedio></SpinVedio>
       </div>
     )
   }

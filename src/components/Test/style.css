@@ -1,8 +1,6 @@
 .test-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 40px;
+    text-align: center;
 }
 
 .test-container>button {
