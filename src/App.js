@@ -13,7 +13,6 @@ class App extends Component {
     }
   }
   
-
   componentDidMount() {
     let domAfter = document.getElementsByClassName('load-after');
     if (domAfter) {

@@ -4,7 +4,8 @@ import './style.css';
 // import SpinMusic from '../Spin/music/index';
 // import SpinRotate from '../Spin/rotate/index';
 // import SpinPot from '../Spin/pot/index';
-import SpinTranslation from '../Spin/translation/index';
+// import SpinTranslation from '../Spin/translation/index';
+import ProgressLine from '../progress/index';
 
 class Test extends Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class Test extends Component {
       <div className="test-container">
         <button onClick={this.handleShowMask}>点我测试</button>
         <div>
-        <SpinTranslation></SpinTranslation>
+        <ProgressLine></ProgressLine>
         </div>
       </div>
     )
