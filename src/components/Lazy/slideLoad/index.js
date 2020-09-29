@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const SlideLoad = () => {
+const SlideLoad = (props) => {
+  const { percent } = props;
   return (
     <div className="slide-container">
       <div className="slide-loader">
-        Loading. . . 
+        Loading {percent} . . . 
       </div>
     </div>
   )
