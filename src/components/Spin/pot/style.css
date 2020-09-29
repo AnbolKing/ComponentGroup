@@ -1,0 +1,71 @@
+.spin-container {
+    width: 122px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.spin-pot {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.spin-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.spin-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #761C19;
+}
+
+.jump1 {
+    animation: loadingjump 0.7s 0s infinite;
+}
+
+.jump2 {
+    animation: loadingjump 0.7s 0.05s infinite;
+}
+
+.jump3 {
+    animation: loadingjump 0.7s 0.1s infinite;
+}
+
+.jump4 {
+    animation: loadingjump 0.7s 0.15s infinite;
+}
+
+.jump5 {
+    animation: loadingjump 0.7s 0.2s infinite;
+}
+
+@keyframes loadingjump {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translateY(3px);
+        opacity: 0.8;
+    }
+    85% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,36 @@
+.spin-container {
+    width: 200px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.spin-rotate {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.spin-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin-circle {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 7px dashed #000000;
+    border-radius: 50%;
+    animation: loadingRotate 1.3s linear 0s infinite;
+}
+
+@keyframes loadingRotate {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

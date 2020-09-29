@@ -9,11 +9,11 @@ const SpinVedio = (props) => {
           <p>Loading</p>
         </div>
         <div className="spin-img">
-          <div className='spin-line vedio1'></div>
-          <div className='spin-line vedio2'></div>
-          <div className='spin-line vedio3'></div>
-          <div className='spin-line vedio4'></div>
-          <div className='spin-line vedio5'></div>
+          <div className='spin-pot vedio1'></div>
+          <div className='spin-pot vedio2'></div>
+          <div className='spin-pot vedio3'></div>
+          <div className='spin-pot vedio4'></div>
+          <div className='spin-pot vedio5'></div>
         </div>
       </div>
     </div>

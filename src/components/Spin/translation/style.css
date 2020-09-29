@@ -1,0 +1,58 @@
+.spin-container {
+    width: 122px;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.spin-translation {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.spin-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.spin-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #DD993C;
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+.slide1 {
+    animation: loadingslide 3s ease 0.4s infinite;
+}
+
+.slide2 {
+    animation: loadingslide 3s ease 0.3s infinite;
+}
+
+.slide3 {
+    animation: loadingslide 3s ease 0.2s infinite;
+}
+
+.slide4 {
+    animation: loadingslide 3s ease 0.1s infinite;
+}
+
+.slide5 {
+    animation: loadingslide 3s ease 0s infinite;
+}
+
+@keyframes loadingslide {
+    50% {
+        transform: translateX(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+}
