@@ -1,0 +1,57 @@
+$color-background: #eaecfa;
+$color-loader: #ce4233;
+.slide-container {
+    width: 100vw;
+    height: 100vh;
+    background: $color-background;
+}
+
+.slide-loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    color: $color-loader;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: $color-loader;
+        position: absolute;
+        animation: load 0.7s ease-in-out infinite alternate;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px
+    }
+    50% {
+        height: 8px;
+        width: 40px
+    }
+    100% {
+        //如果直接用right:0，则不会有滑动的动画，就是要接住left的变化体现滑动
+        left: 235px;
+        height: 30px;
+        width: 15px
+    }
+}
