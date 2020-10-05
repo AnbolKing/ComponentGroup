@@ -1,0 +1,32 @@
+.progress-container {
+    width: 200px;
+    height: 23px;
+    margin: 0 auto;
+}
+
+.progress-container>.progress-charge {
+    width: 200px;
+    height: 23px;
+    background-color: #c9f76f;
+    box-shadow: 0px 0px 10px #111111 inset;
+    animation: charge 7s infinite;
+    -webkit-animation: charge 7s infinite;
+}
+
+@-webkit-keyframes charge {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes charge {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}

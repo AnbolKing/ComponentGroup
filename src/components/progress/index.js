@@ -3,8 +3,11 @@ import './style.css';
 
 const ProgressLine = (props) => {
   return (
-    <div>
-      hello
+    <div className="progress-container">
+      <div className="progress-charge"></div>
+      <div className="progress-text">
+        Loading ...
+      </div>
     </div>
   )
 }
